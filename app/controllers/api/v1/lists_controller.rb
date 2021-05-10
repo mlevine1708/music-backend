@@ -3,12 +3,12 @@ class Api::V1::ListsController < ApplicationController
     before_action :set_user
     
     def index
-        @lists = List.all
+        @lists = @user.lists
         render json: @lists 
     end
 
     def create
-        @list = List.new(list_params)
+        @list = @user.list.new(list_params)
         if @list.save
             render json: @list
         else
@@ -16,7 +16,7 @@ class Api::V1::ListsController < ApplicationController
     end
 
     def show
-        @list = List.find(params[:id])
+        @list = @user.lists.find_by(id: params[:id])
         render json: @list
     end
 
