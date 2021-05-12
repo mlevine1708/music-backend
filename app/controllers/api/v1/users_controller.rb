@@ -11,6 +11,7 @@ class Api::V1::UsersController < ApplicationController
             render json: @user
         else
             render json: {error: 'Error creating user'}
+        end
     end
 
     def show
@@ -27,6 +28,5 @@ class Api::V1::UsersController < ApplicationController
 
     def user_params
         params.require(:user).permit(:name)
-        
     end
 end
