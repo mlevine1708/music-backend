@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_08_202554) do
+ActiveRecord::Schema.define(version: 2021_05_27_004834) do
 
-  create_table "lists", force: :cascade do |t|
+  create_table "posts", force: :cascade do |t|
     t.integer "user_id"
     t.string "genre"
     t.string "kind"
