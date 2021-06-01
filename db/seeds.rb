@@ -7,6 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 user = User.create(name: 'Micah')
 
-list = List.create(user_id: 1, genre: 'rock', kind: 'albums', date: Date.today)
+post = Post.create(user_id: 1, genre: 'rock', kind: 'albums', date: Date.today)
 
-list = List.create(user_id: 1, genre: 'soft rock', kind: 'songs', date: Date.today)
+post = Post.create(user_id: 1, genre: 'soft rock', kind: 'songs', date: Date.today)
