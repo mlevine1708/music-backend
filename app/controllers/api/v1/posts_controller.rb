@@ -13,11 +13,12 @@ class Api::V1::PostsController < ApplicationController
             render json: @post
         else
             render json: {error: 'Error creating post'}
+        end
     end
 
     def show
-        @post = @user.posts.find_by(id: params[:id])
-        render json: @post
+        @posts = Post.all
+        render json: @posts
     end
 
     def destroy
@@ -28,7 +29,7 @@ class Api::V1::PostsController < ApplicationController
     private
 
     def set_user
-        @user = User.find(params[:user_id])
+        @user = User.find(1)
     end
 
 
