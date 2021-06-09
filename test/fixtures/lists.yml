@@ -2,12 +2,12 @@
 
 one:
   user_id: 1
-  genre: MyString
-  kind: MyString
+  title: MyString
+  content: MyString
   date: 2021-05-08 16:25:54
 
 two:
   user_id: 1
-  genre: MyString
-  kind: MyString
+  title: MyString
+  content: MyString
   date: 2021-05-08 16:25:54

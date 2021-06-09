@@ -25,6 +25,6 @@ Things you may want to cover:
   /api/v1/users/:user_id/posts(.:format)
 
   t.integer "user_id"
-  t.string "genre"
-  t.string "kind"
+  t.string "title"
+  t.string "content"
   t.datetime "date"
