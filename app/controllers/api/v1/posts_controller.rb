@@ -8,7 +8,7 @@ class Api::V1::PostsController < ApplicationController
     end
 
     def create
-        @post = @user.post.new(post_params)
+        @post = @user.posts.new(post_params)
         if @post.save
             render json: @post
         else
